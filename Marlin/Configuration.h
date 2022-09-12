@@ -2123,7 +2123,7 @@
  * - Allows Z homing only when XY positions are known and trusted.
  * - If stepper drivers sleep, XY homing may be required again before Z homing.
  */
-//#define Z_SAFE_HOMING
+#define Z_SAFE_HOMING
 
 #if ENABLED(Z_SAFE_HOMING)
   #define Z_SAFE_HOMING_X_POINT X_CENTER  // X point for Z homing
@@ -2131,6 +2131,7 @@
 #endif
 
 // Homing speeds (linear=mm/min, rotational=°/min)
+#define NUM_AXIS 4 // The axis order in all axis related arrays is X, Y, Z, E
 #define HOMING_FEEDRATE_MM_M { (40*60), (40*60), (40*60) }
 
 // Validate that endstops are triggered on homing moves
