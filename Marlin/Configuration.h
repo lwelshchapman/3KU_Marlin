@@ -928,7 +928,7 @@
   #define DELTA_EFFECTOR_OFFSET  20.8 // mm
 
   // Distance between bed and nozzle Z home position
-  #define DELTA_HEIGHT 180.0             // (mm) Get this value from G33 auto calibrate
+  #define DELTA_HEIGHT 210.0             // (mm) Get this value from G33 auto calibrate
 
   #define DELTA_ENDSTOP_ADJ { 0.0, 0.0, 0.0 } // Get these values from G33 auto calibrate
   
@@ -1910,9 +1910,9 @@
  *   leveling in steps so you can manually adjust the Z height at each grid-point.
  *   With an LCD controller the process is guided step-by-step.
  */
-#define AUTO_BED_LEVELING_3POINT
+//#define AUTO_BED_LEVELING_3POINT
 //#define AUTO_BED_LEVELING_LINEAR
-//#define AUTO_BED_LEVELING_BILINEAR
+#define AUTO_BED_LEVELING_BILINEAR
 //#define AUTO_BED_LEVELING_UBL
 //#define MESH_BED_LEVELING
 
